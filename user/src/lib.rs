@@ -1,4 +1,5 @@
 #![no_std]
+#![feature(global_asm)]
 #![feature(asm)]
 #![feature(linkage)]
 #![feature(panic_info_message)]
