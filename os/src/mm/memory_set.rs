@@ -232,7 +232,7 @@ impl MapArea {
     ) -> Self {
         let start_vpn: VirtPageNum = start_va.floor();
         let end_vpn: VirtPageNum = end_va.ceil();
-        println!("area. start_vpn : {:#x}, end_vpn : {:#x}", start_vpn, end_vpn);
+        info!("area. start_vpn : {:?}, end_vpn : {:?}", start_vpn, end_vpn);
         Self {
             vpn_range: VPNRange::new(start_vpn, end_vpn),
             data_frames: BTreeMap::new(),
